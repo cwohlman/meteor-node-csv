@@ -1,13 +1,13 @@
 Package.describe({
 	summary: "node-csv npm packaged for meteor.",
-	version: "0.3.7",
-	git: "https://github.com/Dsyko/meteor-node-csv.git",
-	name: "dsyko:node-csv-npm"
+	version: "0.4.1_1",
+	git: "https://github.com/cwohlman/meteor-node-csv.git",
+	name: "cwohlman:node-csv-npm"
 });
 
 Package.on_use(function (api) {
 	if (api.versionsFrom) {
-		api.versionsFrom("METEOR@0.9.0");
+		api.versionsFrom("METEOR@1.0");
 	}
 
 	api.addFiles(["lib/node-csv.js"], "server");
@@ -17,4 +17,4 @@ Package.on_use(function (api) {
 	}
 });
 
-Npm.depends({"csv":"0.3.6"});
+Npm.depends({"csv":"0.4.1"});
